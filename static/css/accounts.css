@@ -1,5 +1,6 @@
 body {
-    background-image: url(../img/shattered.png);
+    /* background-image: url(../img/color.png); */
+    background-color: aqua;
   }
   
   .logo {
