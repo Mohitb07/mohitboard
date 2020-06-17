@@ -12,10 +12,11 @@ from django.db.models import Count
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.urls import reverse
 
+
 class BoardListView(ListView):
-    model = Board
-    context_object_name = 'boards'
-    template_name = 'home.html'
+        model = Board
+        context_object_name = 'boards'
+        template_name = 'home.html'
 
 class TopicListView(ListView):
     model = Topic
