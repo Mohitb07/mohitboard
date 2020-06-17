@@ -20,12 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '4iv=eu*4y8hn@cvuatm2d_s*4p&$d@lz)(r#3!t9ma(ou&@j1f'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = (os.environ.get('DEBUG') == 'True')
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mohitboard.herokuapp.com']
 
@@ -140,7 +139,7 @@ LOGIN_REDIRECT_URL = 'home'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'bmohit980@gmail.com'
+EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = 'your_app_password_here'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
