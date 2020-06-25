@@ -1,5 +1,18 @@
 from django import forms
-from .models import Topic, Post
+from .models import Topic, Post, Board
+
+class NewBoardForm(forms.ModelForm):
+    description = forms.CharField(
+        widget=forms.Textarea(
+            attrs={'row':3,'placeholder':'write down'}
+        ),
+        max_length=30,
+        help_text='The max length of the text is 30.'
+    )
+    class Meta():
+        model = Board
+        fields = ('name','description')
+
 
 class NewTopicForm(forms.ModelForm):
     message = forms.CharField(
