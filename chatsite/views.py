@@ -11,6 +11,9 @@ from django.db.models import Count
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.urls import reverse
 
+def index(request):
+    return render(request,'index.html')
+
 class CreateDiscussion(CreateView):
     form_class = NewBoardForm
     model = Board
@@ -133,5 +136,4 @@ class PostUpdateView(UpdateView):
         post.updated_at = timezone.now()
         post.save()
         return redirect('topic_posts', pk=post.topic.board.pk, topic_pk=post.topic.pk)
-
 

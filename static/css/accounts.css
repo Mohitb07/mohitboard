@@ -1,16 +1,30 @@
 body {
-    background-image: url(../img/color.png);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/signup.jpg);
   }
   
   .logo {
-    font-family: 'Peralta', cursive;
+    font-family: 'Lato','Arial',sans-serif;
   }
   
   .logo a {
-    color: rgba(0,0,0,.9);
+    color: rgba(255, 255, 255, 0.9);
   }
   
   .logo a:hover,
   .logo a:active {
     text-decoration: none;
   }
+
+  @media only screen and (max-width:1200px){
+    body{width: 100%;}
+}
+
+@media only screen and (max-width:1023px){
+    body{
+        font-size: 18px;
+        width: 100%;
+      }
+}
+@media only screen and (max-width:767px){
+
+}

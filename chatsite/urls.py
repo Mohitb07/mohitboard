@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from chatsite.views import index
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
@@ -22,12 +23,12 @@ from chatsite import views
 from accounts import views as accounts_views
 
 urlpatterns = [
-    url(r'^$', views.BoardListView.as_view(), name='home'),
+    url(r'^$',views.index,name='index'),
+    url(r'^boards/$', views.BoardListView.as_view(), name='home'),
     url(r'^create/$', views.CreateDiscussion.as_view(template_name='board_form.html'), name='board_form'),
     url(r'^signup/$', accounts_views.signup, name='signup'),
     url(r'^login/$', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     url(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
-    
     
     url(r'^reset/$',
         auth_views.PasswordResetView.as_view(
