@@ -99,10 +99,16 @@ header{
     }
     .hero-text-box{
         padding: 0 4%;
+        margin-top: 10%;
+        font-size: 50%;
     }
 
     h1{
         font-size: 180%;
+    }
+
+    .full-btn {
+        font-size: 140%;
     }
 }
 
