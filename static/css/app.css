@@ -107,7 +107,7 @@ header{
         font-size: 180%;
     }
 
-    .full-btn {
+    .full-btn,.ghost-btn {
         font-size: 140%;
     }
 }
