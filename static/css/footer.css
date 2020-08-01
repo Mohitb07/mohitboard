@@ -60,18 +60,13 @@ footer .social a {
     footer {
         height: 150px;
     }
-  
-  }
+}
 @media only screen and (max-width:600px){
     .footer-menu {
         display: flex;
         font-size: 80%;
         justify-content: center;
     }
-    footer {
-        z-index: -1;
-    }
-
 }
 
 @media only screen and (max-width:720px){
@@ -79,9 +74,6 @@ footer .social a {
         display: flex;
         font-size: 80%;
         justify-content: center;
-    }
-    footer {
-        z-index: -1;
     }
 }
 
@@ -97,9 +89,6 @@ and (max-device-width : 480px) {
     footer .social a {
         font-size: 90%;
     }
-    footer {
-        z-index: -1;
-    }
 }
 
 @media only screen 
@@ -112,8 +101,5 @@ and (max-width : 767px) {
     }
     footer .social a {
         font-size: 90%;
-    }
-    footer {
-        z-index: -1;
     }
 }
