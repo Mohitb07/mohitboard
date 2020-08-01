@@ -163,7 +163,6 @@ footer .social a {
     font-size: 80%;
     text-decoration: none;
     color: white !important;
-
 }
 .copyright {
     font-size: 70%;
@@ -215,5 +214,38 @@ footer .social a {
 @media only screen and (max-width:780px){
     .para {
         margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width:360px){
+
+    .image-container h2 {
+        font-size: 180%;
+    }
+
+    .footer-menu {
+        display: flex;
+        font-size: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-menu a {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 90%;
+        text-decoration: none;
+        color: white !important;
+    }
+
+    .copyright {
+        font-size: 50%;
+        padding-top: 3%;
+    }
+
+    footer .social {
+        text-align: center;
+        padding-top:2%;
+        font-size: 80%;
     }
 }

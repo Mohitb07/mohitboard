@@ -48,3 +48,30 @@ footer .social a {
         justify-content: center;
     }
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .footer-menu {
+        font-size: 20%;
+    }
+    .footer-menu a {
+        font-size: 420%;
+    }
+    footer .social a {
+        font-size: 90%;
+    }
+}
+
+@media only screen 
+and (max-width : 767px) {
+    .footer-menu {
+        font-size: 20%;
+    }
+    .footer-menu a {
+        font-size: 260%;
+    }
+    footer .social a {
+        font-size: 90%;
+    }
+}
