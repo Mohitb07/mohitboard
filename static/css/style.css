@@ -146,6 +146,7 @@ footer {
     background-color:black;
     color: white;
     font-size: 150%;
+    z-index: -1;
 }
 
 footer .social {
@@ -200,6 +201,9 @@ footer .social a {
         font-size: 80%;
         justify-content: center;
     }
+    footer {
+        z-index: -1;
+    }
 
 }
 
@@ -209,11 +213,18 @@ footer .social a {
         font-size: 80%;
         justify-content: center;
     }
+    footer {
+        z-index: -1;
+    }
 }
 
 @media only screen and (max-width:780px){
     .para {
         margin-top: 70px;
+    }
+
+    footer {
+        z-index: -1;
     }
 }
 
@@ -243,6 +254,9 @@ footer .social a {
         padding-top: 3%;
     }
 
+    footer {
+        z-index: -1;
+    }
     footer .social {
         text-align: center;
         padding-top:2%;
