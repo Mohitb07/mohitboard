@@ -12,7 +12,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.urls import reverse
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'homepage.html')
 
 class CreateDiscussion(CreateView):
     form_class = NewBoardForm
