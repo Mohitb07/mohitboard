@@ -248,3 +248,34 @@ footer .social a {
         font-size: 80%;
     }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .image-container h2 {        
+        font-size: 180%;
+        position: absolute;
+        font-weight: 200;
+        top: 15rem;        
+    } 
+    .image-container p {
+        font-size: 100%;
+        position: absolute;
+        top: 18rem;
+    }
+    .image-container a {
+        position: relative;
+        top: 16rem;
+        font-size: 90%;
+    }
+    .heading h1 {
+        font-size: 180%;
+        width: 75%;
+        margin: 0 auto;
+        
+    }
+    .para {
+        font-size: 100%;
+        margin-top: -10px;
+    }
+    
+}
