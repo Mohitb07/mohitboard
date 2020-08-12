@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <script data-ad-client="ca-pub-3946282744492638" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <title>{% block title %}Mohit Boards{% endblock %}</title>
     <link rel="shortcut icon" href="{% static 'img/title1.ico' %}" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
                   <a class="nav-link" href="{% url 'home' %}">Boards</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/Mohitb07/mohitboard" target="_blank" rel="noopener">GitHub</a>
+                  <a class="nav-link" href="https://github.com/Mohitb07/mohitboard" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </li>
               </ul>
               {% if user.is_authenticated %}
@@ -76,11 +75,11 @@
 
       <footer>
         <div class="social container">
-          <a href="https://www.facebook.com/mohit.bisht.1903" target="_blank"><ion-icon name="logo-facebook" class="pr-2"></ion-icon></a>
-          <a target="_blank" href="https://www.github.com/Mohitb07"><ion-icon name="logo-github" class="pr-2"></ion-icon></a>
-          <a target="_blank" href="https://www.instagram.com/mohitbisht1903"><ion-icon name="logo-instagram" class="pr-2"></ion-icon></a>
-          <a target="_blank" href="https://www.linkedin.com/in/mohit-bisht-b602511b3/"><ion-icon name="logo-linkedin" class="pr-2"></ion-icon></a>
-          <a href="https://www.twitter.com/Mohitb07" target="_blank"><ion-icon name="logo-twitter" class="pr-2"></ion-icon></a>
+          <a href="https://www.facebook.com/mohit.bisht.1903" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" class="pr-2"></ion-icon></a>
+          <a target="_blank" href="https://www.github.com/Mohitb07" rel="noopener noreferrer"><ion-icon name="logo-github" class="pr-2"></ion-icon></a>
+          <a target="_blank" href="https://www.instagram.com/mohitbisht1903" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="pr-2"></ion-icon></a>
+          <a target="_blank" href="https://www.linkedin.com/in/mohit-bisht-b602511b3/" rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="pr-2"></ion-icon></a>
+          <a href="https://www.twitter.com/Mohitb07" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter" class="pr-2"></ion-icon></a>
         </div>
         <div class="footer-menu text-center container">
             <a href="">About</a>
