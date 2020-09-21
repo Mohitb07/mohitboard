@@ -98,7 +98,7 @@ body {
 
 .image-container {
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/pc.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/background.webp);
     width: 100%;
     height: 100vh;
     padding-top: 2rem;
