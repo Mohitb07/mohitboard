@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.http import request
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Board, Topic, Post
 from .forms import NewTopicForm, PostForm , NewBoardForm
@@ -136,4 +137,3 @@ class PostUpdateView(UpdateView):
         post.updated_at = timezone.now()
         post.save()
         return redirect('topic_posts', pk=post.topic.board.pk, topic_pk=post.topic.pk)
-
